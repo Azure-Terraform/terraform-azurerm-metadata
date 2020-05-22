@@ -31,7 +31,7 @@ locals {
   tags = merge(
     {
       business_unit     = local.naming_rules.businessUnit.allowed_values[var.business_unit]
-      cost_center       = local.naming_rules.costCenter.allowed_values[var.cost_center]
+      cost_center       = var.cost_center
       environment       = local.naming_rules.environment.allowed_values[var.environment]
       location          = local.naming_rules.azureRegion.allowed_values[var.location]
       market            = local.naming_rules.market.allowed_values[var.market]
