@@ -5,6 +5,10 @@ variable "naming_conventions_yaml_url" {
   default     = "https://raw.githubusercontent.com/openrba/python-azure-naming/master/custom.yaml" 
 }
 
+variable "naming_rules" {
+  type = string
+}
+
 # Mandatory tags (https://github.com/openrba/python-azure-naming)
 variable "business_unit" {
   description = "rba.businessUnit (https://github.com/openrba/python-azure-naming)"

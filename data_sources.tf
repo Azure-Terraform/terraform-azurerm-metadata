@@ -1,15 +1,16 @@
 data "azurerm_subscription" "current" {}
 
-data "http" "naming_rules" {
-  url = var.naming_conventions_yaml_url
-
-  request_headers = {
-    Accept = "application/yaml"
-  }
-}
+#data "http" "naming_rules" {
+#  url = var.naming_conventions_yaml_url
+#
+#  request_headers = {
+#    Accept = "application/yaml"
+#  }
+#}
 
 locals {
-  naming_rules = yamldecode(data.http.naming_rules.body)
+  #naming_rules = yamldecode(data.http.naming_rules.body)
+  naming_rules = yamldecode(var.naming_rules)
   
   # Validate required inputs
   valid_business_unit                = can(local.naming_rules.businessUnit.allowed_values[var.business_unit]) ? null : file("ERROR: invalid input value for business_unit")
