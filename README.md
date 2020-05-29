@@ -18,7 +18,6 @@ Where applicable, the inputs will be checked against the RBA naming rules for Az
 | Name | Version |
 |------|---------|
 | azurerm | >= 2.0.0 |
-| http | >= 1.2.0 |
 
 ## Inputs
 
@@ -30,7 +29,7 @@ Where applicable, the inputs will be checked against the RBA naming rules for Az
 | environment | rba.environment (https://github.com/openrba/python-azure-naming) | `string` | n/a | yes |
 | location | rba.azureRegion (https://github.com/openrba/python-azure-naming) | `string` | n/a | yes |
 | market | rba.market (https://github.com/openrba/python-azure-naming) | `string` | n/a | yes |
-| naming\_conventions\_yaml\_url | URL for naming conventions yaml file | `string` | `"https://raw.githubusercontent.com/openrba/python-azure-naming/master/custom.yaml"` | no |
+| naming\_rules | naming conventions yaml file | `string` | n/a | yes |
 | on\_prem | rba.onPrem (https://github.com/openrba/python-azure-naming) | `string` | `""` | no |
 | product\_group | rba.productGroup (https://github.com/openrba/python-azure-naming) or [a-z0-9]{3,12} | `string` | `""` | no |
 | product\_name | rba.productName (https://github.com/openrba/python-azure-naming) | `string` | `""` | no |

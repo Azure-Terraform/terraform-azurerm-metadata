@@ -1,8 +1,6 @@
-# Data source for naming conventions
-variable "naming_conventions_yaml_url" {
-  description = "URL for naming conventions yaml file"
+variable "naming_rules" {
+  description = "naming conventions yaml file" 
   type        = string
-  default     = "https://raw.githubusercontent.com/openrba/python-azure-naming/master/custom.yaml" 
 }
 
 # Mandatory tags (https://github.com/openrba/python-azure-naming)
