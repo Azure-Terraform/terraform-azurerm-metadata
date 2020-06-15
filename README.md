@@ -25,7 +25,6 @@ Where applicable, the inputs will be checked against the RBA naming rules for Az
 |------|-------------|------|---------|:-----:|
 | additional\_tags | A map of additional tags to add to the tags output | `map(string)` | `{}` | no |
 | business\_unit | rba.businessUnit (https://github.com/openrba/python-azure-naming) | `string` | n/a | yes |
-| cost\_center | rba.costCenter (https://github.com/openrba/python-azure-naming) | `string` | n/a | yes |
 | environment | rba.environment (https://github.com/openrba/python-azure-naming) | `string` | n/a | yes |
 | location | rba.azureRegion (https://github.com/openrba/python-azure-naming) | `string` | n/a | yes |
 | market | rba.market (https://github.com/openrba/python-azure-naming) | `string` | n/a | yes |
