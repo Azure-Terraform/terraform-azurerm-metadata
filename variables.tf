@@ -9,11 +9,6 @@ variable "business_unit" {
   type        = string
 }
 
-variable "cost_center" {
-  description = "rba.costCenter (https://github.com/openrba/python-azure-naming)"
-  type        = string
-}
-
 variable "environment" {
   description = "rba.environment (https://github.com/openrba/python-azure-naming)"
   type        = string
