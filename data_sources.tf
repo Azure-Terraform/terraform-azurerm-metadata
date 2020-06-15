@@ -8,7 +8,6 @@ locals {
   valid_environment                  = can(local.naming_rules.environment.allowed_values[var.environment]) ? null : file("ERROR: invalid input value for environment")
   valid_location                     = can(local.naming_rules.azureRegion.allowed_values[var.location]) ? null : file("ERROR: invalid input value for location")
   valid_market                       = can(local.naming_rules.market.allowed_values[var.market]) ? null : file("ERROR: invalid input value for market")
-  valid_cost_center                  = can(local.naming_rules.costCenter.allowed_values[var.cost_center]) ? null : file("ERROR: invalid input value for cost_center")
   valid_subscription_type            = can(local.naming_rules.subscriptionType.allowed_values[var.subscription_type]) ? null : file("ERROR: invalid input value for subscription_type")
 
   # Validate optional inputs
