@@ -5,6 +5,4 @@ terraform {
     azurerm = ">= 2.0.0"
     http    = ">= 1.2.0"
   }
-
-  experiments = [variable_validation]
 }
