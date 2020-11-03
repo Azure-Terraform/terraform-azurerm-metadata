@@ -4,7 +4,7 @@ output "location" {
 }
 
 output "location_pair" {
-  value       = local.paired[local.location]
+  value       = local.paired_regions[local.location]
   description = "Azure paired region"
 }
 
