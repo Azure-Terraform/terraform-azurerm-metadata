@@ -1,14 +1,19 @@
 output "location" {
-  value = local.location
+  value       = local.location
   description = "Azure region"
 }
 
+output "location_pair" {
+  value       = local.paired[local.location]
+  description = "Azure paired region"
+}
+
 output "names" {
-  value = local.names
+  value       = local.names
   description = "Map of validated names for resources"
 }
 
 output "tags" {
-  value = local.tags
+  value       = local.tags
   description = "Map of tags with any global defaults appended"
 }
