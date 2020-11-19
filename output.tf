@@ -1,5 +1,5 @@
 output "location" {
-  value = local.location
+  value = var.location
   description = "Azure region"
 }
 
