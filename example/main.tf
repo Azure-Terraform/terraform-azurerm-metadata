@@ -25,7 +25,7 @@ module "naming" {
 }
 
 module "metadata" {
-  source = "github.com/Azure-Terraform/terraform-azurerm-metadata.git?ref=v1.1.0"
+  source = "../"
 
   naming_rules = module.naming.yaml
 
