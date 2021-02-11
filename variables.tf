@@ -5,22 +5,22 @@ variable "naming_rules" {
 
 # Mandatory tags (https://github.com/openrba/python-azure-naming)
 variable "business_unit" {
-  description = "rba.businessUnit (https://github.com/openrba/python-azure-naming)"
+  description = "rba.businessUnit (https://github.com/openrba/terraform-azurerm-naming)"
   type        = string
 }
 
 variable "environment" {
-  description = "rba.environment (https://github.com/openrba/python-azure-naming)"
+  description = "rba.environment (https://github.com/openrba/terraform-azurerm-naming)"
   type        = string
 }
 
 variable "location" {
-  description = "rba.azureRegion (https://github.com/openrba/python-azure-naming)"
+  description = "rba.azureRegion (https://github.com/openrba/terraform-azurerm-naming)"
   type        = string
 }
 
 variable "market" {
-  description = "rba.market (https://github.com/openrba/python-azure-naming)"
+  description = "rba.market (https://github.com/openrba/terraform-azurerm-naming)"
   type        = string
 }
 
@@ -30,19 +30,19 @@ variable "subscription_id" {
 }
 
 variable "subscription_type" {
-  description = "rba.subscriptionType (https://github.com/openrba/python-azure-naming)"
+  description = "rba.subscriptionType (https://github.com/openrba/terraform-azurerm-naming)"
   type        = string
 }
 
 # Optional tags
 variable "on_prem" {
-  description = "rba.onPrem (https://github.com/openrba/python-azure-naming)"
+  description = "rba.onPrem (https://github.com/openrba/terraform-azurerm-naming)"
   type        = string
   default     = ""
 }
 
 variable "product_group" {
-  description = "rba.productGroup (https://github.com/openrba/python-azure-naming) or [a-z0-9]{3,12}"
+  description = "rba.productGroup (https://github.com/openrba/terraform-azurerm-naming) or [a-z0-9]{3,12}"
   type        = string
   default     = ""
 
@@ -53,7 +53,7 @@ variable "product_group" {
 }
 
 variable "product_name" {
-  description = "rba.productName (https://github.com/openrba/python-azure-naming)"
+  description = "rba.productName (https://github.com/openrba/terraform-azurerm-naming)"
   type        = string
   default     = ""
 
@@ -69,12 +69,12 @@ variable "project" {
 }
 
 variable "resource_group_type" {
-  description = "rba.resourceGroupType (https://github.com/openrba/python-azure-naming)"
+  description = "rba.resourceGroupType (https://github.com/openrba/terraform-azurerm-naming)"
   type        = string
 }
 
 variable "service_name" {
-  description = "rba.serviceName (https://github.com/openrba/python-azure-naming)"
+  description = "rba.serviceName (https://github.com/openrba/terraform-azurerm-naming)"
   type        = string
   default     = ""
 }
@@ -86,13 +86,13 @@ variable "sre_team" {
 }
 
 variable "subnet_type" {
-  description = "rba.subnetType (https://github.com/openrba/python-azure-naming)"
+  description = "rba.subnetType (https://github.com/openrba/terraform-azurerm-naming)"
   type        = string
   default     = ""
 }
 
 variable "virtual_network_gateway_type" {
-  description = "virtualNetGwType (https://github.com/openrba/python-azure-naming)"
+  description = "virtualNetGwType (https://github.com/openrba/terraform-azurerm-naming)"
   type        = string
   default     = ""
 }
