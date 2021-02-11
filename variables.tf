@@ -48,7 +48,7 @@ variable "product_group" {
 
   validation {
     condition     = length(regexall("[a-z0-9]{3,12}", var.product_group)) == 1
-    error_message = "ERROR: product_group must [a-z0-9]{3,12}."
+    error_message = "ERROR: product_group must [a-z0-9]{2,12}."
   }
 }
 
