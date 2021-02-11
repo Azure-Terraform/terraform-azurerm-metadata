@@ -3,24 +3,24 @@ variable "naming_rules" {
   type        = string
 }
 
-# Mandatory tags (https://github.com/openrba/python-azure-naming)
+# Mandatory tags (https://github.com/Azure-Terraform/example-naming-template)
 variable "business_unit" {
-  description = "rba.businessUnit (https://github.com/openrba/terraform-azurerm-naming)"
+  description = "rba.businessUnit (https://github.com/Azure-Terraform/example-naming-template#custombusinessunit)"
   type        = string
 }
 
 variable "environment" {
-  description = "rba.environment (https://github.com/openrba/terraform-azurerm-naming)"
+  description = "rba.environment (https://github.com/Azure-Terraform/example-naming-template#customenvironment)"
   type        = string
 }
 
 variable "location" {
-  description = "rba.azureRegion (https://github.com/openrba/terraform-azurerm-naming)"
+  description = "rba.azureRegion (https://github.com/Azure-Terraform/example-naming-template#customazureregion)"
   type        = string
 }
 
 variable "market" {
-  description = "rba.market (https://github.com/openrba/terraform-azurerm-naming)"
+  description = "rba.market (https://github.com/Azure-Terraform/example-naming-template#custommarket)"
   type        = string
 }
 
@@ -30,19 +30,19 @@ variable "subscription_id" {
 }
 
 variable "subscription_type" {
-  description = "rba.subscriptionType (https://github.com/openrba/terraform-azurerm-naming)"
+  description = "rba.subscriptionType (https://github.com/Azure-Terraform/example-naming-template#customsubscriptiontype)"
   type        = string
 }
 
 # Optional tags
 variable "on_prem" {
-  description = "rba.onPrem (https://github.com/openrba/terraform-azurerm-naming)"
+  description = "rba.onPrem (https://github.com/Azure-Terraform/example-naming-template#customonprem)"
   type        = string
   default     = ""
 }
 
 variable "product_group" {
-  description = "rba.productGroup (https://github.com/openrba/terraform-azurerm-naming) or [a-z0-9]{2,12}"
+  description = "rba.productGroup (https://github.com/Azure-Terraform/example-naming-template#customproductgroup) or [a-z0-9]{2,12}"
   type        = string
   default     = ""
 
@@ -53,7 +53,7 @@ variable "product_group" {
 }
 
 variable "product_name" {
-  description = "rba.productName (https://github.com/openrba/terraform-azurerm-naming)"
+  description = "rba.productName (https://github.com/Azure-Terraform/example-naming-template#customproductname)"
   type        = string
   default     = ""
 
@@ -69,12 +69,12 @@ variable "project" {
 }
 
 variable "resource_group_type" {
-  description = "rba.resourceGroupType (https://github.com/openrba/terraform-azurerm-naming)"
+  description = "rba.resourceGroupType (https://github.com/Azure-Terraform/example-naming-template#customresourcegrouptype)"
   type        = string
 }
 
 variable "service_name" {
-  description = "rba.serviceName (https://github.com/openrba/terraform-azurerm-naming)"
+  description = "rba.serviceName (https://github.com/Azure-Terraform/example-naming-template#customservicename)"
   type        = string
   default     = ""
 }
@@ -86,13 +86,13 @@ variable "sre_team" {
 }
 
 variable "subnet_type" {
-  description = "rba.subnetType (https://github.com/openrba/terraform-azurerm-naming)"
+  description = "rba.subnetType (https://github.com/Azure-Terraform/example-naming-template#customsubnettype)"
   type        = string
   default     = ""
 }
 
 variable "virtual_network_gateway_type" {
-  description = "virtualNetGwType (https://github.com/openrba/terraform-azurerm-naming)"
+  description = "virtualNetGwType (https://github.com/Azure-Terraform/example-naming-template#customvirtualnetgwtype)"
   type        = string
   default     = ""
 }
