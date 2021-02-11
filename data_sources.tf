@@ -16,7 +16,7 @@ locals {
   valid_service_name                 = var.service_name == "" || can(local.naming_rules.serviceName.allowed_values[var.service_name]) ? null : file("ERROR: invalid input value for service_name")
   valid_virtual_network_gateway_type = var.virtual_network_gateway_type == "" || can(local.naming_rules.virtualNetGwType.allowed_values[var.virtual_network_gateway_type]) ? null : file("ERROR: invalid input value for virtual_network_gateway_type")
 
-  # Do no validate inputs for sandboxes which need more flexibility
-  valid_product_group                = var.environment == "sandbox" || var.product_group == "" || can(local.naming_rules.productGroup.allowed_values[var.product_group]) ? null : file("ERROR: invalid input value for product_group")
-  valid_product_name                 = var.environment == "sandbox" || var.product_name == "" || can(local.naming_rules.productName.allowed_values[var.product_name]) ? null : file("ERROR: invalid input value for product_name")
+  # Do no validate inputs for sandboxes or greenfield which need more flexibility
+  valid_product_group                = var.environment == "sandbox" || var.environment == "greenfield" || var.product_group == "" || can(local.naming_rules.productGroup.allowed_values[var.product_group]) ? null : file("ERROR: invalid input value for product_group")
+  valid_product_name                 = var.environment == "sandbox" || var.environment == "greenfield" || var.product_name == "" || can(local.naming_rules.productName.allowed_values[var.product_name]) ? null : file("ERROR: invalid input value for product_name")
 }
