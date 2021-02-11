@@ -42,12 +42,12 @@ variable "on_prem" {
 }
 
 variable "product_group" {
-  description = "rba.productGroup (https://github.com/openrba/terraform-azurerm-naming) or [a-z0-9]{3,12}"
+  description = "rba.productGroup (https://github.com/openrba/terraform-azurerm-naming) or [a-z0-9]{2,12}"
   type        = string
   default     = ""
 
   validation {
-    condition     = length(regexall("[a-z0-9]{3,12}", var.product_group)) == 1
+    condition     = length(regexall("[a-z0-9]{2,12}", var.product_group)) == 1
     error_message = "ERROR: product_group must [a-z0-9]{2,12}."
   }
 }
