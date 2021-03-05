@@ -30,8 +30,8 @@ Where applicable, the inputs will be checked against the input naming rules for 
 | market | rba.market (https://github.com/Azure-Terraform/example-naming-template#custommarket) | `string` | n/a | yes |
 | naming\_rules | naming conventions yaml file | `string` | n/a | yes |
 | on\_prem | rba.onPrem (https://github.com/Azure-Terraform/example-naming-template#customonprem) | `string` | `""` | no |
-| product\_group | rba.productGroup (https://github.com/Azure-Terraform/example-naming-template#customproductgroup) or [a-z0-9]{2,12} | `string` | `""` | no |
-| product\_name | rba.productName (https://github.com/Azure-Terraform/example-naming-template#customproductname) | `string` | `""` | no |
+| product\_group | rba.productGroup (https://github.com/Azure-Terraform/example-naming-template#customproductgroup) or [a-z0-9]{2,12} | `string` | n/a | yes |
+| product\_name | rba.productName (https://github.com/Azure-Terraform/example-naming-template#customproductname) | `string` | n/a | yes |
 | project | Jira Project | `string` | n/a | yes |
 | resource\_group\_type | rba.resourceGroupType (https://github.com/Azure-Terraform/example-naming-template#customresourcegrouptype) | `string` | n/a | yes |
 | service\_name | rba.serviceName (https://github.com/Azure-Terraform/example-naming-template#customservicename) | `string` | `""` | no |
