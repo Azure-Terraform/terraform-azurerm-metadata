@@ -92,7 +92,10 @@ locals {
     switzerlandwest    = "switzerlandnorth"
     ukwest             = "uksouth"
     uaecentral         = "uaenorth"
-    brazilsoutheast    = "brazilsouth"
+    brazilsoutheast    = "brazilsouth",
+    usgovarizona       = "usgovtexas",
+    usgoviowa          = "usgovvirginia",
+    usgovvirginia      = "usgovtexas"
   }
 
 }
