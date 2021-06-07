@@ -44,7 +44,6 @@ variable "on_prem" {
 variable "product_group" {
   description = "rba.productGroup (https://github.com/Azure-Terraform/example-naming-template#customproductgroup) or [a-z0-9]{2,12}"
   type        = string
-  default     = ""
 
   validation {
     condition     = length(regexall("[a-z0-9]{2,12}", var.product_group)) == 1
@@ -55,7 +54,6 @@ variable "product_group" {
 variable "product_name" {
   description = "rba.productName (https://github.com/Azure-Terraform/example-naming-template#customproductname)"
   type        = string
-  default     = ""
 
   validation {
     condition     = length(regexall("[a-z0-9]{3,16}", var.product_name)) == 1
