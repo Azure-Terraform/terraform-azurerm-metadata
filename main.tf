@@ -96,6 +96,7 @@ locals {
     usgovarizona       = "usgovtexas",
     usgoviowa          = "usgovvirginia",
     usgovvirginia      = "usgovtexas"
+    usgovtexas         = "usgovvirginia"
   }
 
 }
