@@ -17,7 +17,6 @@ locals {
       location          = var.location
       market            = var.market
       subscription_type = var.subscription_type
-      project           = var.project
     },
     var.on_prem != "" ? { on_prem = var.on_prem } : {},
     var.product_group != "" ? { product_group = var.product_group } : {},
@@ -37,6 +36,7 @@ locals {
       market            = local.naming_rules.market.allowed_values[var.market]
       subscription_id   = var.subscription_id
       subscription_type = local.naming_rules.subscriptionType.allowed_values[var.subscription_type]
+      project           = var.project
     },
     var.on_prem != "" ? { on_prem = local.naming_rules.onPrem.allowed_values[var.on_prem] } : {},
     var.product_group != "" ? { product_group = lookup(local.naming_rules.productGroup.allowed_values, var.product_group, var.product_group) } : {},
