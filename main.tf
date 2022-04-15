@@ -17,6 +17,7 @@ locals {
       location          = var.location
       market            = var.market
       subscription_type = var.subscription_type
+      project           = var.project
     },
     var.on_prem != "" ? { on_prem = var.on_prem } : {},
     var.product_group != "" ? { product_group = var.product_group } : {},
